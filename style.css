@@ -26,11 +26,24 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
+  padding: 5px;
+  position: sticky;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
 #nav-list {
   display: flex;
   list-style: none;
+}
+
+#search-bar {
+  margin: 20px 20px 0;
 }
 
 .bubbles img {
@@ -42,4 +55,27 @@ nav {
 .bubbles img:hover {
   width: 250px;
   height: 250px;
+}
+
+.cards {
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+}
+footer img {
+  width: 100%;
+  height: 200px;
+  opacity: 0.5;
+}
+footer #block-left,
+footer #block-middle-left,
+footer #block-middle-right,
+footer #block-right {
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
