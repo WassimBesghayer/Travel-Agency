@@ -1,4 +1,15 @@
+// $font-1 {
+//     font-family: "Alex Brush", cursive;
+//     font-weight: 400;
+//     font-style: normal;
+// }
 
+// $font-2 {
+//     font-family: "Agbalumo", system-ui;
+//     font-weight: 400;
+//     font-style: normal;
+// }
+  
 
 header {
     margin: 0;
@@ -9,10 +20,10 @@ header {
 
 
 
-#welcome-bg {
+#welcome-bg { 
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh !important;
     overflow: hidden;
 }
 
@@ -20,7 +31,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
@@ -42,3 +53,35 @@ header {
 // #welcome-bg .content p {
 //     font-size: 1.5rem;
 // }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+}
+
+// #slogan { $font-1; }
+// .title { $font-2; }
+
+.bubbles {
+    img {
+        border-radius: 50%;
+        height: 230px;
+        width: 230px;
+        transition: 0.5s;
+        }
+    img:hover {
+        width: 250px;
+        height: 250px;
+    }    
+}
+
+.cards {
+    // background-image: ;
+    display: flex;
+    
+}
