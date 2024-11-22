@@ -1,64 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+/* declaring variables and its arguments is kinda tricky */
 header {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#welcome-bg {
-  position: relative;
-  width: 100%;
-  height: 100vh !important;
-  overflow: hidden;
-}
-
 #welcome-bg video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100% !important;
-  height: 100%;
+  width: 100%;
+  height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
-  padding: 5px;
-  position: sticky;
 }
-nav ul {
+nav .nav-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-top: -5px;
+}
+nav .nav-bar .bg {
+  background-image: url(./media/images/arabesque.jpg);
+  opacity: 0.4;
+}
+nav #logo {
+  height: 60px;
+  padding-left: 30px;
+}
+nav #nav-list {
+  display: flex;
+  list-style: none;
+}
+nav #nav-list ul {
   list-style: none;
   display: flex;
-  width: 30%;
+  width: 500px;
   justify-content: space-around;
   margin-top: 20px;
+  padding-left: 50px;
 }
 
-#nav-list {
-  display: flex;
-  list-style: none;
+a {
+  color: red;
+}
+
+#slogan {
+  font-family: "Agbalumo";
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 50px;
+  padding-right: 20px;
+  color: red;
+}
+
+.title {
+  font-family: "Dancing Script";
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 #search-bar {
   margin: 20px 20px 0;
 }
 
-.bubbles img {
+#top-dest {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+#top-dest .bubbles img {
   border-radius: 50%;
   height: 230px;
   width: 230px;
   transition: 0.5s;
 }
-.bubbles img:hover {
+#top-dest .bubbles img:hover {
   width: 250px;
   height: 250px;
 }
 
 .cards {
+  margin-top: 70px;
   display: flex;
+  justify-content: space-around;
 }
 
 footer {

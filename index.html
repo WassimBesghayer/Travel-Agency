@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./media/images/tn.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -24,20 +24,21 @@
     <header>
         <section id="welcome-bg">
             <video autoplay loop muted playsinline>
-                <source src="./media/Let's Discover Tunisia.mp4" type="video/mp4" >
+                <source src="./media/Tunisia.mp4" type="video/mp4" >
                 Your browser doesn't support the video tag !
             </video>
         </section>
         <nav>
+          <div class="nav-bar">
             <div id="logo">
-                <img src="" alt="fix the bug!">
+                <img src="./media/images/Tunisia-go travel-NO BACKGROUND.png" alt="fix the bug!" height=60px>
             </div>
             <div id="nav-list">
                 <ul>
-                    <li>Hotels</li>
-                    <li>Planned tour</li>
-                    <li>Destination Guide</li>
-                    <li>Vehicle rent</li>
+                    <li><a href="./hotels.html" target="_blank">Hotels</a></li>
+                    <li><a href="./Planned tours.html" target="_blank">Planned tour</a></li>
+                    <li><a href="./Destination Guide.html" target="_blank">Destination Guide</a></li>
+                    <li><a href="./Vehicle rent.html" target="_blank">Vehicle rent</a></li>
                 </ul>
             </div>
             <div class="searching">
@@ -48,14 +49,14 @@
             </div>
 
             <h1 id="slogan">Explore Tunisia with us</h1>
+          </div>
         </nav>
-   </header>
+  </header>
 
-   <main>
 
+  <main>
     <section id="top-dest">
-        <h1 class="title">Top destinations</h1>
-
+      <div> <h1 class="title">Top destinations</h1> 
         <div class="bubbles">
             <img src="./media/images/places/tabarka.jpg">
             <h3>Tabarka</h3>
@@ -72,7 +73,7 @@
             <img src="./media/images/places/jerba_1.jpg">
             <h3>Jerba</h3>
         </div>
-        
+      </div>
     </section>
 
 
@@ -168,10 +169,10 @@
             <a href="#" class="btn btn-primary">Book</a>
           </div>
         </div>
-     </section>
+    </section>
 
 
-   </main>
+</main>
 
 </body>
 
