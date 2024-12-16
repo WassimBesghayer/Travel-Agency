@@ -1,44 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 /* declaring variables and its arguments is kinda tricky */
-header {
+/* header {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 #welcome-bg video {
   width: 100%;
   height: 700px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: -1;
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
+  background-image: url(./media/images/arabesque.png);
+  /* opacity: .5; */
+  height: 100px;
+  width: 100%;
+  margin-top: -5px;
 }
-nav .nav-bar {
+
+.nav-bar {
   display: flex;
   align-items: center;
   width: 100%;
   height: 80px;
-  margin-top: -5px;
 }
-nav .nav-bar .bg {
-  background-image: url(./media/images/arabesque.jpg);
-  opacity: 0.4;
-}
-nav #logo {
+
+#logo {
   height: 60px;
   padding-left: 30px;
 }
-nav #nav-list {
+
+#nav-list {
   display: flex;
   list-style: none;
 }
-nav #nav-list ul {
+#nav-list ul {
   list-style: none;
   display: flex;
   width: 500px;
@@ -47,8 +48,9 @@ nav #nav-list ul {
   padding-left: 50px;
 }
 
-a {
+#nav-list a {
   color: red;
+  text-decoration: none;
 }
 
 #slogan {
@@ -65,50 +67,93 @@ a {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 20px 0;
+  padding: 30px 0;
 }
 
 #search-bar {
   margin: 20px 20px 0;
 }
 
+/* styling 1st section (top destinations) */
 #top-dest {
   margin-top: 70px;
   margin-bottom: 70px;
+  height: 400px;
+}
+#top-dest .top-dest-bubbles {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
-#top-dest .bubbles img {
+#top-dest .top-dest-bubbles .bubbles img {
   border-radius: 50%;
   height: 230px;
   width: 230px;
   transition: 0.5s;
 }
-#top-dest .bubbles img:hover {
+#top-dest .top-dest-bubbles .bubbles img:hover {
   width: 250px;
   height: 250px;
 }
+.bubbles {
+  margin: 0 20px;
+}
+.bubbles h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
 
-.cards {
-  margin-top: 70px;
+/* Styling 2ns section (Hotels) */
+#hotels {
+  margin: 20px 0;
+  padding: 30px 0;
+}
+
+.card-org {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-footer {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  flex-flow: column wrap;
+.card {
+  margin: 10px 20px;
+}
+
+/* styling the footer */
+footer ul{
   list-style: none;
 }
-footer img {
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer h4, li, svg {
+  color: white;
+}
+.footer-bg {
+  padding-top: 40px;
+  background-image: url(./media/images/footer-background.png);
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
   width: 100%;
-  height: 200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-bg::before {
+  content: '';
+  z-index: -1;
   opacity: 0.5;
 }
-footer #block-left,
-footer #block-middle-left,
-footer #block-middle-right,
-footer #block-right {
-  flex-direction: column;
-}/*# sourceMappingURL=style.css.map */
+
+.block {
+  width: 200px;
+  height: 250px;
+}
